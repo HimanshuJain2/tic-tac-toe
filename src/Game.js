@@ -5,6 +5,7 @@ function Game() {
   const [xIsNext, setXIsNext] = useState(true);
   const [history, setHistory] = useState([Array(9).fill(null)]);
   const [currentMove, setCurrentMove] = useState(0);
+  
   const currentSquares = history[currentMove];
   
 
@@ -41,6 +42,7 @@ function Game() {
   const resetBoard=()=>{
     setXIsNext(true)
     setCurrentMove(0)
+    setHistory([Array(9).fill(null)])
   }
 
   return (
