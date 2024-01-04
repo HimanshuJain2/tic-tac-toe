@@ -1,0 +1,85 @@
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #F0B72D;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.app {
+  text-align: center;
+  background-color: #F5D381;
+  border-radius: 30px;
+  padding: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #333;
+}
+
+.status {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.board-row {
+  display: flex;
+  justify-content: center;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  font-size: 45px;
+  font-weight: 600;
+  border: 2px solid #ccc;
+  margin: 2px;
+  cursor: pointer;
+  background-color: #7A7C7D;
+  transition: background-color .3s ease-in-out;
+}
+
+.square:hover,.resetButton:hover, .moveButton:hover {
+  background-color: #ddd;
+}
+
+.game-info{
+  width: 250px;
+  height: 350px;
+  background-color: #F5D381;
+  border-radius: 30px;
+  position: fixed;
+  top: 60px;
+  left: 920px;
+}
+.resetButton{
+  margin-top:20px;
+  margin-left: 20px;
+  width: 150px;
+  height: 50px;
+  background-color: #7A7C7D;
+  cursor: pointer;
+  transition: background-color .3s ease-in-out;
+
+}
+.game-info ul {
+  list-style: none;
+}
+.game-info ul li {
+  margin: 0px 10px;
+  
+}
+.moveButton{
+  background-color: #7A7C7D;
+  width:150px;
+  margin-left: -20px;
+  margin-top: 2px;
+  cursor: pointer;
+  transition: background-color .3s ease-in-out;
+
+}
